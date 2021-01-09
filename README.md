@@ -3,6 +3,11 @@
 
 ``` c#
 
+using System;
+using System.Linq;
+
+--- Namespace Here.
+
 class Program
     {
 
