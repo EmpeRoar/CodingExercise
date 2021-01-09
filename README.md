@@ -2,15 +2,13 @@
 
 
 ``` c#
-
 using System;
 using System.Linq;
 
---- Namespace Here.
-
-class Program
+namespace FindIntersection
+{
+    internal class Program
     {
-
         private static int[] Splitter(string str)
         {
             return str.Split(",").Select(Int32.Parse).ToArray();
@@ -33,7 +31,7 @@ class Program
 
             if (c.Count() > 0)
             {
-                return String.Join(" ,", c);
+                return String.Join(",", c.Where(x => x != 0).ToArray());
             }
             else
             {
@@ -41,12 +39,11 @@ class Program
             }
         }
 
-
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine(FindIntersection(new string[] { "1, 2, 3", "3" }));
-            Console.ReadLine(); 
+            Console.ReadLine();
         }
     }
-    
+}
 ```
