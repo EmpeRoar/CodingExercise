@@ -19,7 +19,7 @@ namespace MedainOfArray
             l.AddRange(r1.ToList());
             l.AddRange(r2.ToList());
             var r = l.OrderBy(x => x).ToArray();
-            if((r.Length % 2)== 0)
+            if((r.Length % 2) == 0)
             {
                 var i1 = r.Length / 2;
                 var i2 = i1 + 1;
