@@ -1,4 +1,5 @@
-using System;
+using ReverseALinkedList.App;
+using System.Collections.Generic;
 using Xunit;
 
 namespace ReverseALinkedList.Test
@@ -8,11 +9,28 @@ namespace ReverseALinkedList.Test
         [Fact]
         public void ReversingLinkedListTest()
         {
-            var linkedList = App.Program.GenerateLinkedList(new int[] { 1, 2, 3, 4, 5, 6 });
+            var data = new int[] { 1, 2, 3, 4, 5, 6 };
+            var expected = new int[] { 6, 5, 4, 3, 2, 1 };
+
+            var linkedList = App.Program.GenerateLinkedList(data);
             Assert.Equal(1, linkedList.Val);
 
             var reversedLinkedList = App.Program.ReversedTheLinkedList(linkedList);
-            Assert.Equal(6, reversedLinkedList.Val);
+            ReverseListValues = new List<int>();
+            GetNodeValue(reversedLinkedList);
+
+            Assert.Equal(expected, ReverseListValues.ToArray());
+        }
+
+        private List<int> ReverseListValues { get; set; }
+
+        private void GetNodeValue(Node node)
+        {
+            ReverseListValues.Add(node.Val);
+            if (node.Right != null)
+            {
+                GetNodeValue(node.Right);
+            }
         }
     }
 }

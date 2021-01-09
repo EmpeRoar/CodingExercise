@@ -11,12 +11,13 @@ namespace ReverseALinkedList.App
 
     public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
         private static int[] _r;
+
         public static Node GenerateLinkedList(int[] r)
         {
             _r = r;
@@ -31,45 +32,40 @@ namespace ReverseALinkedList.App
             }
             var n = new Node();
             n.Val = _r[i];
-            
+
             i++;
             n.Right = NextNode(i);
 
             return n;
         }
 
-        private static Node ReverseNode;
+        private static Node ReversedNode;
+
         public static Node ReversedTheLinkedList(Node ll)
         {
-            LastNode(ll);
-            return ReverseNode;
+            ReverseNode(ll);
+            return ReversedNode;
         }
 
-        private static Node LastNode(Node n)
+        private static Node ReverseNode(Node n)
         {
             if (n.Right != null)
             {
                 var rn = new Node();
                 rn.Val = n.Val;
-                rn.Right = ReverseNode;
-                ReverseNode = rn;
-                LastNode(n.Right);
-                return ReverseNode;
+                rn.Right = ReversedNode;
+                ReversedNode = rn;
+                ReverseNode(n.Right);
+                return null;
             }
             else
             {
                 var rn = new Node();
                 rn.Val = n.Val;
-                rn.Right = ReverseNode;
-                ReverseNode = rn;
-                return ReverseNode;
+                rn.Right = ReversedNode;
+                ReversedNode = rn;
+                return ReversedNode;
             }
         }
-
-
-        
-
-
-
     }
 }
