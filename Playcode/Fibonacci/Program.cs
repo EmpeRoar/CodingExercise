@@ -27,6 +27,17 @@ namespace Fibonacci
                     prev = temp;
                 }
             }
+            // -----
+            Console.WriteLine(" ");
+
+            var pair = (m1: 1, m0: 1);
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine(pair.m1);
+                pair = (pair.m0, pair.m1 + pair.m0);
+
+            }
+
             Console.ReadLine();
         }
     }
