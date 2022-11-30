@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31004.235
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{CD06E800-6EA1-4748-AC0E-E2BE628773C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram", "Anagram\Anagram.csproj", "{8315C514-F121-4321-82E5-13966C0DE819}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictio", "Dictio\Dictio.csproj", "{29FB4B65-FC36-4E17-92C3-1E467000197E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constr", "Constr\Constr.csproj", "{1FC469C1-3EE6-48DD-81D5-FBABA1994C12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD06E800-6EA1-4748-AC0E-E2BE628773C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD06E800-6EA1-4748-AC0E-E2BE628773C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD06E800-6EA1-4748-AC0E-E2BE628773C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD06E800-6EA1-4748-AC0E-E2BE628773C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8315C514-F121-4321-82E5-13966C0DE819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8315C514-F121-4321-82E5-13966C0DE819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8315C514-F121-4321-82E5-13966C0DE819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8315C514-F121-4321-82E5-13966C0DE819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FB4B65-FC36-4E17-92C3-1E467000197E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FB4B65-FC36-4E17-92C3-1E467000197E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FB4B65-FC36-4E17-92C3-1E467000197E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FB4B65-FC36-4E17-92C3-1E467000197E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC469C1-3EE6-48DD-81D5-FBABA1994C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC469C1-3EE6-48DD-81D5-FBABA1994C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC469C1-3EE6-48DD-81D5-FBABA1994C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC469C1-3EE6-48DD-81D5-FBABA1994C12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44C7714B-DC21-46A1-9C62-38737063DB1A}
+	EndGlobalSection
+EndGlobal
